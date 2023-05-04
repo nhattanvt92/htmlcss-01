@@ -596,7 +596,7 @@ a {
     white-space: normal;
 }
 
-.footer .column .item ~ .item {
+.footer .column .item + .item {
     margin-top: 18px;
 }
 
@@ -605,7 +605,17 @@ a {
     display: flex;
 }
 
-.footer .social-link ~ .social-link {
+.footer .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #F9F9F9;
+    border-radius: 3px;
+}
+
+.footer .social-link + .social-link {
     margin-left: 16px;
 }
 
